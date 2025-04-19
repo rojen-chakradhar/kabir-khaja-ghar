@@ -9,37 +9,28 @@
 	</head>
 	<body>
 		<main>
-      <!-- <menu class="menu">
-        <h1 onclick="close()">menu</h1>
-        <ul class="menu-items">
-          <li>Momo</li>
-          <li>Chowmein</li>
-          <li>Donut</li>
-        </ul>
-        <button onclick="placeOrder()">Order</button>
-      </menu> -->
       <section class="hero">
         <nav class="navbar">
-          <h1 class="logo"><a href="#">Kabir Khaja Ghar</a></h1>
+          <h1 class="logo"><a href="#">kabir khaja ghar</a></h1>
           <ul class="nav-links">
             <li><a href="#">home</a></li>
             <li><a href="./about.html">about</a></li>
             <li><a href="./menu.html">menu</a></li>
             <li><a href="#review">reviews</a></li>
             <li><a href="./contact.html">contact</a></li>
-            <li class="cart"><a href="">cart <i class="ri-cart-line"></i></a></li>
+            <li class="cart"><a href="">cart <i class="ri-shopping-cart-2-line cart-icon"><span class="cart-count" id="cart-count"></span></i></a></li>
           </ul>
         </nav>
         <div class="container">
           <div class="content">
             <div class="heading">
-              <h1>Nepali</h1>
-              <h1>Resturant</h1>
+              <h1>nepali</h1>
+              <h1>resturant</h1>
             </div>
             <p>The spot for authentic cuisine and great customer service</p>
             <div class="cta">
-              <button>order online</button>
-              <button>view menu</button>
+              <a href=""><button class="view-btn">order online</button></a>
+              <a href=""><button class="btn">view menu</button></a>
             </div>
           </div>
           <div class="content">
@@ -52,31 +43,48 @@
       <section class="cards">
         <div class="card">
           <picture>
-            <img src="" alt="" loading="lazy">
+            <!-- <img src="" alt="" loading="lazy"> -->
           </picture>
-          <h1>Authentic Recipes</h1>
-          <p>prepaid using traditional newari recipes with real spices.</p>
+          <h3>Authentic <br> Recipes</h3>
+          <div class="para">
+            <p>prepaid using traditional newari recipes with real spices.</p>
+          </div>
         </div>
         <div class="card">
           <picture>
-            <img src="" alt="" loading="lazy">
+            <!-- <img src="" alt="" loading="lazy"> -->
           </picture>
-          <h1>Wide Variety of Dishes</h1>
-          <p>aromatic curres, flavorful tandoori, crispy samosas, and more.</p>
+          <h3>Wide Variety <br> of Dishes</h3>
+          <div class="para">
+            <p>aromatic curres, flavorful tandoori, crispy samosas, and more.</p>
+          </div>
         </div>
         <div class="card">
           <picture>
-            <img src="" alt="" loading="lazy">
+            <!-- <img src="" alt="" loading="lazy"> -->
           </picture>
-          <h1>Vegeterian & Vegan Options</h1>
-          <p>plenty of choices for those with special diets.</p>
+          <h3>Wide Variety <br> of Dishes</h3>
+          <div class="para">
+            <p>aromatic curres, flavorful tandoori, crispy samosas, and more.</p>
+          </div>
         </div>
         <div class="card">
           <picture>
-            <img src="" alt="" loading="lazy">
+            <!-- <img src="" alt="" loading="lazy"> -->
           </picture>
-          <h1>Fresh Ingridents</h1>
-          <p>only natural products, no artificial additives.</p>
+          <h3>Vegeterian & <br> Vegan Options</h3>
+          <div class="para">
+            <p>plenty of choices for those with special diets.</p>
+          </div>
+        </div>
+        <div class="card">
+          <picture>
+            <!-- <img src="" alt="" loading="lazy"> -->
+          </picture>
+          <h3>Fresh <br> Ingridents</h3>
+          <div class="para">
+            <p>only natural products, no artificial additives.</p>
+          </div>
         </div>
       </section>
       <section class="about">
@@ -88,51 +96,51 @@
             </picture>
           </div>
           <div class="content">
-            <p>Welcome to Kabir Khaja Ghar - a little piece of Nepal in Madhyapur Thimi!
-              We bring you authentic Newari cuisine made with love and traditional recipes. Our menu features aromatic curries, crispy samosas, flavorful tandoori dishes, and delicate desserts, all prepared with the finest spices and fresh ingredients.
-              Every dish is a journey through rich flavors and aromas, blending freshness, spice, and deep-rooted traditions. We use only natural ingredients and authentic Nepali spices to ensure a truly genuine taste experience.
+            <p>Welcome to Kabir Khaja Ghar - a little piece of Nepal in Madhyapur Thimi! <br> 
+              We bring you authentic Newari cuisine made with love and traditional recipes. Our menu features aromatic curries, crispy samosas, flavorful tandoori dishes, and delicate desserts, all prepared with the finest spices and fresh ingredients. <br>
+              Every dish is a journey through rich flavors and aromas, blending freshness, spice, and deep-rooted traditions. We use only natural ingredients and authentic Nepali spices to ensure a truly genuine taste experience. <br>
               Come and enjoy a warm atmosphere, great hospitality, and an unforgettable culinary adventure. We look forward to welcoming you and sharing the taste of Newar with you!</p>
           </div>
         </div>
       </section>
       <section class="must-try">
         <h1>Must try</h1>
-        <div class="cards">
-          <div class="card">
+        <div class="items">
+          <div class="item">
             <picture>
               <img src="" alt="" loading="lazy">
             </picture>
-            <h3>mo:mo:</h3>
+            <h3>mo: mo:</h3>
             <p>Tender pieces of buffalo cooked in a flavoured tomato cream sauce. One of the most famous newari dishes in the world.</p>
-            <div class="idk">
-              <p>$16.00</p>
-              <i class="ri-cart-line"></i>
+            <div class="info">
+              <p>$80.00</p>
+              <i class="ri-shopping-cart-2-line"></i>
             </div>
           </div>
-          <div class="card">
+          <div class="item">
             <picture>
               <img src="" alt="" loading="lazy">
             </picture>
             <h3>chewla</h3>
             <p>Tender pieces of chicken cooked in a flavoured tomato cream sauce. One of the most famous newari dishes in the world.</p>
-            <div class="idk">
-              <p>$16.00</p>
-              <i class="ri-cart-line"></i>
+            <div class="info">
+              <p>$100.00</p>
+              <i class="ri-shopping-cart-2-line"></i>
             </div>
           </div>
-          <div class="card">
+          <div class="item">
             <picture>
               <img src="" alt="" loading="lazy">
             </picture>
             <h3>kachila</h3>
             <p>Tender pieces of chicken cooked in a flavoured tomato cream sauce. One of the most famous newari dishes in the world.</p>
-            <div class="idk">
-              <p>$16.00</p>
-              <i class="ri-cart-line"></i>
+            <div class="info">
+              <p>$100.00</p>
+              <i class="ri-shopping-cart-2-line"></i>
             </div>
           </div>
         </div>
-        <a href=""><button>view menu</button></a>
+        <a href=""><button class="view-btn">view menu</button></a>
       </section>
       <section class="smth">
         <div class="txt">
@@ -140,6 +148,7 @@
         </div>
       </section>
       <section class="reviews" id="review">
+        <h1>reviews</h1>
         <div class="container">
           <div class="content">
             <picture>
@@ -172,7 +181,7 @@
                   <p>"A great restaurant for Newari food lovers. A wide selection of dishes, resonable prices, and amazing flavors. I will definitely come back for the Mo: Mo: and chewla!"</p>
                 </div>
               </div>
-              <button>read more</button>
+              <button class="btn">read more</button>
             </div>
           </div>
         </div>
@@ -202,13 +211,14 @@
           </div>
         </div>
         <div class="cta">
-          <button>order online</button>
-          <button>view menu</button>
+          <a href=""><button class="view-btn">order online</button></a>
+          <a href=""><button class="btn">view menu</button></a>
         </div>
       </section>
       <section class="address">
+        <div class="google-map"></div>
         <address>
-          <i class="ri-pin-line"></i>
+          <i class="ri-map-pin-line"></i>
           <p>madhyapur thimi, bhaktapur</p>
         </address>
       </section>
@@ -217,23 +227,23 @@
           <div class="shop">
             <h1 class="logo"><a href="">kabir khaja ghar</a></h1>
             <div class="social">
-              <i class="ri-facebook-line"></i>
-              <i class="ri-x-line"></i>
-              <i class="ri-instagram-line"></i>
-              <i class="ri-tiktok-line"></i>
+              <a href=""><i class="ri-facebook-line"></i></a>
+              <a href=""><i class="ri-x-line"></i></a>
+              <a href=""><i class="ri-instagram-line"></i></a>
+              <a href=""><i class="ri-tiktok-line"></i></a>
             </div>
           </div>
           <div class="links">
             <ul>
-              <li>menu</li>
-              <li>terms & conditions</li>
+              <li><a href="">menu</a></li>
+              <li><a href="">terms & conditions</a></li>
             </ul>
             <ul>
-              <li>privacy policy</li>
-              <li>policy cookies</li>
+              <li><a href="">privacy policy</a></li>
+              <li><a href="">policy cookies</a></li>
             </ul>
             <ul>
-              <li>accessebility</li>
+              <li><a href="">accessebility</a></li>
             </ul>
           </div>
         </div>
