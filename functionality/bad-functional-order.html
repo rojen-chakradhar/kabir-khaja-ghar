@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bad Functional Order</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; }
+    h2 a { text-decoration: none; color: #333; }
+    button { margin: 5px; padding: 10px 15px; cursor: pointer; }
+    .cart { margin-top: 20px; border: 1px solid #ccc; padding: 10px; }
+    input { margin: 5px 0; padding: 8px; width: calc(100% - 16px); }
+    #status { margin-top: 10px; font-weight: bold; color: green; }
+  </style>
+</head>
+<body>
+  <h2><a href="../index.html">Menu</a></h2>
+  <button onclick="addToCart('Momo')">Add Momo</button>
+  <button onclick="addToCart('Chowmein')">Add Chowmein</button>
+  <button onclick="addToCart('Fried Rice')">Add Fried Rice</button>
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-list"></ul>
+  </div>
+
+  <h3>Customer Info</h3>
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="text" id="phone" placeholder="Phone Number" required>
+  <input type="text" id="address" placeholder="Address" required>
+
+  <button onclick="placeOrder()">Place Order</button>
+  <p id="status"></p>
+
+  <script>
+    let cart = [];
+
+    function addToCart(item) {
+      cart.push(item);
+      updateCart();
+    }
+
+    function updateCart() {
+      const list = document.getElementById('cart-list');
+      list.innerHTML = '';
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        list.appendChild(li);
+      });
+    }
+
+    function placeOrder() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const address = document.getElementById('address').value;
+      const orderDetails = cart.join(', ');
+
+      if (!name || !phone || !address || cart.length === 0) {
+        alert("Please fill in all fields and add at least one item to the cart.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("entry.1369029750", name);
+      formData.append("entry.525705036", phone);
+      formData.append("entry.1436147613", address);
+      formData.append("entry.879901578", orderDetails);
+
+      fetch("https://docs.google.com/forms/d/e/1FAIpQLScp0Tcfj4TQwR3LHn4TrIUg-6NYIQCGpLvBawKsvGSdLKP3aA/formResponse", {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
+      }).then(() => {
+        document.getElementById('status').textContent = "Order placed successfully!";
+        cart = [];
+        updateCart();
+        document.getElementById('name').value = '';
+        document.getElementById('phone').value = '';
+        document.getElementById('address').value = '';
+      }).catch(() => {
+        document.getElementById('status').textContent = "Failed to place order. Try again.";
+      });
+    }
+  </script>
+</body>
+</html>
