@@ -15,6 +15,7 @@ html,
 body {
 	height: 100%;
 	width: 100%;
+	background-color: #fafafa;
 }
 
 section {
@@ -28,13 +29,11 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	padding: 1vw 5vw;
-	background-color: #fffffa;
 }
 
 nav h1 {
 	font-size: 1.5vw;
-	color: orange;
-	-webkit-text-stroke: 0.1px red;
+	color: #2e2e2e;
 	cursor: pointer;
 }
 
@@ -47,13 +46,13 @@ nav ul {
 nav ul li a {
 	font-size: 1.2vw;
 	text-transform: capitalize;
-	color: orange;
+	color: #2e2e2e;
 }
 
 .menu-link {
 	font-size: 1.2vw;
 	text-transform: capitalize;
-	color: orange;
+	color: #2e2e2e;
 	cursor: pointer;
 }
 
@@ -71,7 +70,7 @@ nav ul li a {
 	font-size: 5vw;
 	text-align: center;
 	text-transform: uppercase;
-	color: #fffffa;
+	color: #2e2e2e;
 	cursor: default;
 }
 
@@ -92,7 +91,7 @@ button {
 	padding: .5vw 4vw;
   font-size: 1.5vw;
   color: #fffffa;
-  background-color: #333;
+  background-color: #2e2e2e;
   border: none;
   border-radius: 20px;
 	cursor: pointer;
