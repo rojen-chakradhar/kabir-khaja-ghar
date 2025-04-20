@@ -55,3 +55,12 @@
 	background-color: var(--cta);
 	transition: background-color .5s linear, color .5s ease;
 }
+
+.navbar .cart-icon {
+	color: var(--cta);
+}
+
+.navbar .cart a:hover .cart-icon {
+	color: var(--background);
+	transition: color .5s ease;
+}

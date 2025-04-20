@@ -5,9 +5,15 @@ footer {
 	background-color: var(--text);
 }
 
-footer .logo {
+footer .logo h1 {
 	font-size: 1.5vw;
 	color: var(--background);
+}
+
+.shop {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1vw;
 }
 
 .grid {
@@ -46,4 +52,5 @@ footer p {
 	font-size: 1.2vw;
 	text-transform: capitalize;
 	text-align: center;
+	color: var(--background);
 }
