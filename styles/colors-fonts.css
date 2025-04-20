@@ -1,0 +1,40 @@
+:root {
+	--text: #2e2e2e;
+	--border: #e5e5e5;
+	--tags: #a8d5ba;
+	--cta: #ff6d3f;
+	--background: #fafafa;
+}
+
+@font-face {
+	font-family: 'Yatra One';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/YatraOne-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Asul regular';
+	src: url('../assets/fonts/Asul-Regular.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Asul bold';
+	src: url('../assets/fonts/Asul-Regular.ttf');
+	font-style: normal;
+	font-weight: 700;
+}
+
+.yatra-one{
+	font-family: 'Yatra One', serif;
+}
+
+.asul-regular{
+	font-family: 'Asul regular', serif;
+}
+
+.asul-bold{
+	font-family: 'Asul bold', serif;
+}

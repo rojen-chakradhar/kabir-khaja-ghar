@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  /*outline: 1px dotted red;*/
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+	background-color: var(--background);
+}
+
+.hero {
+	width: 100%;
+	overflow: hidden;
+}
+
+section {
+	padding: 0 5vw;
+}
+
+h1.about {
+  margin: 2vw 0 1vw;
+  font-size: 5vw;
+  text-align: center;
+  color: var(--text);
+}
+
+.paras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p.about {
+  width: 50%;
+  font-size: 1.5vw;
+  text-align: center;
+  color: var(--text);
+}

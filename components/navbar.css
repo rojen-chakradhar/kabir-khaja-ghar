@@ -1,0 +1,57 @@
+.navbar {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1vw 0;
+	z-index: 2;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	column-gap: 1vw;
+	font-size: 1.5vw;
+	text-transform: capitalize;
+	color: var(--text);
+}
+
+.navbar ul {
+	display: flex;
+	align-items: center;
+	column-gap: 2.5vw;
+}
+
+.navbar ul li a {
+	position: relative;
+	font-size: 1.2vw;
+	text-transform: capitalize;
+	color: var(--text);
+}
+
+.navbar ul .asul-regular a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	border-bottom: 2px solid var(--cta);
+	transition: width .5s ease;
+}
+
+.navbar ul .asul-regular a:hover::before {
+	width: 100%;
+	transition: width .5s ease;
+}
+
+.navbar .cart a {
+	padding: 0.5vw 2vw;
+	border: 1px solid var(--cta);
+	border-radius: 2vw;
+	transition: background-color .5s linear, color .5s ease;
+}
+
+.navbar .cart a:hover {
+	color: var(--background);
+	background-color: var(--cta);
+	transition: background-color .5s linear, color .5s ease;
+}

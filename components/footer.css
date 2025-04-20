@@ -1,0 +1,49 @@
+footer {
+	margin-top: 3vw;
+	padding: 3vw 5vw 1vw;
+	color: var(--background);
+	background-color: var(--text);
+}
+
+footer .logo {
+	font-size: 1.5vw;
+	color: var(--background);
+}
+
+.grid {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.social a i {
+	font-size: 1.5vw;
+	color: var(--background);
+}
+
+.links {
+	display: flex;
+	justify-content: flex-end;
+	column-gap: 5vw;
+	font-size: 1.2vw;
+	text-transform: capitalize;
+}
+
+.links ul {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1vw;
+}
+
+.links ul li a {
+	font-size: 1.2vw;
+	text-transform: capitalize;
+	color: var(--background);
+}
+
+footer p {
+	margin-top: 3vw;
+	font-size: 1.2vw;
+	text-transform: capitalize;
+	text-align: center;
+}

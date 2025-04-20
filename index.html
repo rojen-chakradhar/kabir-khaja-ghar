@@ -4,28 +4,24 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kabir Khaja Ghar</title>
+    <link rel="shortcut icon" href="./assets/images/logo-small.png" type="image/x-icon">
+		<link rel="stylesheet" href="./styles/colors-fonts.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./components/navbar.css" />
+		<link rel="stylesheet" href="./components/footer.css" />
 		<link rel="stylesheet" href="./styles/style.css" />
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
 	<body>
 		<main>
       <section class="hero">
-        <nav class="navbar">
-          <h1 class="logo yatra-one"><a href="#">kabir khaja ghar</a></h1>
-          <ul class="nav-links">
-            <li class="asul-regular"><a href="#">home</a></li>
-            <li class="asul-regular"><a href="./about.html">about</a></li>
-            <li class="asul-regular"><a href="./menu.html">menu</a></li>
-            <li class="asul-regular"><a href="#review">reviews</a></li>
-            <li class="asul-regular"><a href="./contact.html">contact</a></li>
-            <li class="cart asul-bold"><a href="">cart <i class="ri-shopping-cart-2-line cart-icon"><span class="cart-count" id="cart-count"></span></i></a></li>
-          </ul>
-        </nav>
+        <div id="navbar-placeholder"></div>
         <div class="container">
           <div class="content">
             <div class="heading yatra-one">
-              <h1>Newari</h1>
-              <h1>resturant</h1>
+              <h1>kabir</h1>
+              <h1>khaja</h1>
+              <h1>ghar</h1>
             </div>
             <p class="asul-regular">The spot for authentic cuisine and great customer service</p>
             <div class="cta">
@@ -34,8 +30,9 @@
             </div>
           </div>
           <div class="content">
-            <picture>
-              <img src="" alt="" loading="lazy">
+            <div class="bg"></div>
+            <picture class="hero-img">
+              <img src="./assets/images/kachila.png" alt="" loading="lazy">
             </picture>
           </div>
         </div>
@@ -43,7 +40,7 @@
       <section class="cards">
         <div class="card">
           <picture>
-            <!-- <img src="" alt="" loading="lazy"> -->
+            <img src="" alt="" loading="lazy">
           </picture>
           <h3 class="asul-bold">Authentic <br> Recipes</h3>
           <div class="para asul-regular">
@@ -52,7 +49,7 @@
         </div>
         <div class="card">
           <picture>
-            <!-- <img src="" alt="" loading="lazy"> -->
+            <img src="" alt="" loading="lazy">
           </picture>
           <h3 class="asul-bold">Wide Variety <br> of Dishes</h3>
           <div class="para asul-regular">
@@ -61,7 +58,7 @@
         </div>
         <div class="card">
           <picture>
-            <!-- <img src="" alt="" loading="lazy"> -->
+            <img src="" alt="" loading="lazy">
           </picture>
           <h3 class="asul-bold">Wide Variety <br> of Dishes</h3>
           <div class="para asul-regular">
@@ -70,7 +67,7 @@
         </div>
         <div class="card">
           <picture>
-            <!-- <img src="" alt="" loading="lazy"> -->
+            <img src="" alt="" loading="lazy">
           </picture>
           <h3 class="asul-bold">Vegeterian & <br> Vegan Options</h3>
           <div class="para asul-regular">
@@ -79,7 +76,7 @@
         </div>
         <div class="card">
           <picture>
-            <!-- <img src="" alt="" loading="lazy"> -->
+            <img src="" alt="" loading="lazy">
           </picture>
           <h3 class="asul-bold">Fresh <br> Ingridents</h3>
           <div class="para asul-regular">
@@ -87,7 +84,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <h1 class="yatra-one">About us</h1>
         <div class="container">
           <div class="content">
@@ -103,7 +100,7 @@
           </div>
         </div>
       </section>
-      <section class="must-try">
+      <section class="must-try" id="menu">
         <h1 class="yatra-one">Must try</h1>
         <div class="items">
           <div class="item">
@@ -169,11 +166,11 @@
                   <div class="name">
                     <p class="asul-bold">rahul sharma</p>
                     <div class="stars">
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
+                      <i class="ri-star-fill star-filled"></i>
+                      <i class="ri-star-fill star-filled"></i>
+                      <i class="ri-star-fill star-filled"></i>
+                      <i class="ri-star-fill star-filled"></i>
+                      <i class="ri-star-line star-empty"></i>
                     </div>
                   </div>
                 </div>
@@ -186,7 +183,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h1 class="yatra-one">contact</h1>
         <div class="container">
           <div class="content">
@@ -216,42 +213,16 @@
         </div>
       </section>
       <section class="address asul-regular">
-        <div class="google-map"></div>
+        <div class="google-map">
+          <iframe style="border:none" src="https://mapy.com/s/covubuheso" frameborder="0"></iframe>
+        </div>
         <address>
           <i class="ri-map-pin-line"></i>
           <p>madhyapur thimi, bhaktapur</p>
         </address>
       </section>
-      <footer>
-        <div class="grid">
-          <div class="shop">
-            <h1 class="logo yatra-one"><a href="">kabir khaja ghar</a></h1>
-            <div class="social">
-              <a href=""><i class="ri-facebook-line"></i></a>
-              <a href=""><i class="ri-x-line"></i></a>
-              <a href=""><i class="ri-instagram-line"></i></a>
-              <a href=""><i class="ri-tiktok-line"></i></a>
-            </div>
-          </div>
-          <div class="links">
-            <ul>
-              <li><a href="" class="asul-bold">menu</a></li>
-              <li><a href="" class="asul-bold">terms & conditions</a></li>
-            </ul>
-            <ul>
-              <li><a href="" class="asul-bold">privacy policy</a></li>
-              <li><a href="" class="asul-bold">policy cookies</a></li>
-            </ul>
-            <ul>
-              <li><a href="" class="asul-bold">accessebility</a></li>
-            </ul>
-          </div>
-        </div>
-        <p class="asul-regular">kabir khaja ghar</p>
-      </footer>
+      <div id="footer-placeholder"></div>
     </main>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-		<script src="./scripts/script.js"></script>
+		<script src="./scripts/injectComponents.js"></script>
 	</body>
 </html>
