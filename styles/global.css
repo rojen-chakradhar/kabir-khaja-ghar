@@ -1,9 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+  font-size: 16px;
+	background-color: var(--background);
+}
+
 :root {
 	--text: #2e2e2e;
 	--border: #e5e5e5;
 	--tags: #a8d5ba;
 	--cta: #ff6d3f;
 	--background: #fafafa;
+	--p-ud: 4vw;
+	--p-side: 10vw;
+  --heading: 6rem;
+  --sub-heading: 3rem;
+  --title: 1.2rem;
+  --para: 1rem;
+	--half: 0.5rem;
+  --icon: 1.2rem;
 }
 
 @font-face {
@@ -27,14 +52,24 @@
 	font-weight: 700;
 }
 
-.yatra-one{
+.yo {
 	font-family: 'Yatra One', serif;
 }
 
-.asul-regular{
+.ar {
 	font-family: 'Asul regular', serif;
 }
 
-.asul-bold{
+.ab {
 	font-family: 'Asul bold', serif;
+}
+
+html::-webkit-scrollbar {
+	width: var(--half);
+	background-color: var(--border);
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: var(--cta);
+	border-radius: var(--half);
 }

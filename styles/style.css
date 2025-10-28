@@ -1,66 +1,40 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
-	list-style: none;
-	scroll-behavior: smooth;
-}
-
-html,
-body {
-	height: 100%;
-	width: 100%;
-	background-color: var(--background);
+.sec {
+	padding: var(--p-ud) var(--p-side);
 }
 
 .hero {
-	height: 100vh;
+	height: 100dvh;
 	width: 100%;
 	overflow: hidden;
 }
 
-section {
-	padding: 0 5vw;
+.hero .para {
+	margin: var(--p-ud) 0;
 }
 
-.container {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.content {
-	flex: 1;
-	flex-shrink: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	row-gap: 2vw;
-}
-
-.heading h1 {
-	display: flex;
-	align-items: center;
-	font-size: 8vw;
+.heading {
+	width: 50%;
+	font-size: var(--heading);
 	line-height: 1;
 	text-transform: capitalize;
 	color: var(--text);
 }
 
-.heading h1:nth-child(2) {
-	justify-content: space-around;
-}
-
-.content p {
-	margin: 1vw 0;
-	font-size: 1.5vw;
+.sub-heading {
+	font-size: var(--sub-heading);
+	line-height: 1;
+	text-transform: capitalize;
 	color: var(--text);
 }
 
-.cta {
+.para {
+	/* margin: var(--p-ud) 0; */
+	font-size: var(--para);
+	line-height: 1;
+	color: var(--text);
+}
+
+.ctas {
 	display: flex;
 	align-items: center;
 	column-gap: 2vw;
@@ -96,32 +70,6 @@ section {
 	transition: background-color .5s linear, color .5s linear;
 }
 
-.bg {
-	position: absolute;
-	top: 55%;
-	right: 0;
-	transform: translateY(-50%);
-	height: 85vh;
-	width: 50vw;
-	border-radius: 30vw 0 0 30vw;
-	background-color: #333;
-}
-
-.hero .content .hero-img {
-	position: absolute;
-	top: 55%;
-	transform: translateY(-52%);
-	z-index: 2;
-	overflow: hidden;
-}
-
-.hero .content .hero-img img {
-	height: auto;
-	max-width: 80%;
-	object-fit: cover;
-	object-position: center;
-}
-
 .cards,
 .items {
 	width: 100%;
@@ -129,11 +77,6 @@ section {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 4vw 0 5vw;
-}
-
-.cards {
-	padding: 5vw;
 }
 
 .card {
@@ -161,12 +104,15 @@ section {
 	overflow: hidden;
 }
 
-.card h3 {
-	font-size: 1.2vw;
+.txts {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 }
 
-.card p {
-	font-size: 1vw;
+.title {
+	font-size: var(--title);
+	color: var(--text);
 }
 
 .about {
