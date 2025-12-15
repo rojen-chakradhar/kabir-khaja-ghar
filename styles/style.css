@@ -1,22 +1,25 @@
 .sec {
-	padding: var(--p-ud) var(--p-side);
+	padding: 5vw 10vw;
 }
 
-.hero {
+.hero-sec {
 	height: 100dvh;
 	width: 100%;
 	overflow: hidden;
 }
 
-.hero .para {
-	margin: var(--p-ud) 0;
-}
-
 .heading {
 	width: 50%;
-	font-size: var(--heading);
+	font-size: 6rem;
 	line-height: 1;
 	text-transform: capitalize;
+	color: var(--text);
+}
+
+.para {
+	margin: 1rem 0;
+	font-size: 1rem;
+	line-height: 1.2;
 	color: var(--text);
 }
 
@@ -34,19 +37,18 @@
 	color: var(--text);
 }
 
-.ctas {
+.hero-ctas {
 	display: flex;
 	align-items: center;
-	column-gap: 2vw;
+	column-gap: 5rem;
 }
 
-.btn,
-.view-btn {
-	padding: 1vw 2vw;
-	font-size: 1.5vw;
+.cta {
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
 	text-transform: capitalize;
-	border: 1px solid var(--cta);
-	border-radius: 2vw;
+	border: 1px solid var(--secondary);
+	border-radius: 2rem;
 	color: var(--text);
 	background-color: var(--background);
 	transition: background-color .5s linear, color .5s linear;

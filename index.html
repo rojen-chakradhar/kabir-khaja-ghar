@@ -6,22 +6,52 @@
 		<title>Kabir Khaja Ghar</title>
     <link rel="shortcut icon" href="./assets/images/logo-small.png" type="image/x-icon">
 		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
 		<link rel="stylesheet" href="./styles/style.css" />
-		<link rel="stylesheet" href="./components/navbar.css" />
-		<link rel="stylesheet" href="./components/footer.css" />
-		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
 	<body>
 		<main>
-      <div id="navbar-placeholder"></div>
-      <section class="hero sec">
-        <h1 class="heading yo">authentic newari restaurant</h1>
-        <p class="para ar">The spot for authentic cuisine and great customer service</p>
-        <div class="ctas">
-          <a href="tel:+9779841514746"><button class="view-btn ab">call now</button></a>
-          <a href="./menu.html"><button class="btn ab">view menu</button></a>
-        </div>
+      <nav class="navbar">
+        <a href="./index.html" class="nav-logo">
+          <h1 class="yo nav-logo">kabir khaja ghar</h1>
+        </a>
+        <ul class="nav-links">
+          <a href="./index.html">
+            <li class="nav-link ar">home</li>
+          </a>
+          <a href="./about.html">
+            <li class="nav-link ar">about</li>
+          </a>
+          <a href="./menu.html">
+          <li class="nav-link ar">menu</li>
+          </a>
+          <a href="#review">
+            <li class="nav-link ar">reviews</li>
+          </a>
+          <a href="#contact">
+            <li class="nav-link ar">contact</li>
+          </a>
+        </ul>
+        <a href="tel:+9779746428695">
+          <button class="nav-cta-btn ab">call now <i class="ri-phone-line phone-icon"></i></button>
+        </a>
+      </nav>
+      <section class="hero-sec sec">
+        <section class="hero-flexbox">
+          <section class="hero-left-sec">
+            <h1 class="heading yo">authentic newari restaurant</h1>
+            <p class="para ar">The spot for authentic cuisine and great customer service</p>
+            <article class="hero-ctas">
+              <a href="tel:+9779841514746"><button class="cta view-btn ab">call now</button></a>
+              <a href="./menu.html"><button class="cta btn ab">view menu</button></a>
+            </article>
+          </section>
+          <section class="hero-right-sec">
+            <img src="" alt="hero image" class="hero-image" loading="lazy">
+          </section>
+        </section>
       </section>
       <section class="cards sec">
         <article class="card">

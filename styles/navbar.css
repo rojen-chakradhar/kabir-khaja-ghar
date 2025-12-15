@@ -1,0 +1,64 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 10vw;
+}
+
+.nav-logo {
+	font-size: 1.2rem;
+	line-height: 1;
+	text-transform: capitalize;
+	color: var(--text);
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+}
+
+.nav-link {
+	position: relative;
+	font-size: 1rem;
+	line-height: 1;
+	text-transform: capitalize;
+	color: var(--text);
+}
+
+.nav-link::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	border-bottom: 2px solid var(--secondary);
+	transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+	width: 100%;
+	transition: width 0.3s ease;
+}
+
+.nav-cta-btn {
+	position: relative;
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--secondary);
+	border-radius: 2rem;
+	text-transform: capitalize;
+	color: var(--text);
+	background-color: var(--background);
+	cursor: pointer;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-cta-btn:hover {
+	color: var(--background);
+	background-color: var(--secondary);
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-cta-btn:hover .phone-icon {
+	color: var(--background);
+	transition: color 0.2s ease;
+}
