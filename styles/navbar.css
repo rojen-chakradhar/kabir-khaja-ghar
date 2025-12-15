@@ -20,7 +20,7 @@
 
 .nav-link {
 	position: relative;
-	font-size: 1rem;
+	font-size: var(--normal-txt-size);
 	line-height: 1;
 	text-transform: capitalize;
 	color: var(--text);
@@ -32,12 +32,12 @@
 	bottom: 0;
 	width: 0;
 	border-bottom: 2px solid var(--secondary);
-	transition: width 0.3s ease;
+	transition: width var(--transition);
 }
 
 .nav-link:hover::before {
 	width: 100%;
-	transition: width 0.3s ease;
+	transition: width var(--transition);
 }
 
 .nav-cta-btn {
@@ -49,16 +49,16 @@
 	color: var(--text);
 	background-color: var(--background);
 	cursor: pointer;
-	transition: background-color 0.2s ease, color 0.2s ease;
+	transition: background-color var(--transition), color var(--transition);
 }
 
 .nav-cta-btn:hover {
 	color: var(--background);
 	background-color: var(--secondary);
-	transition: background-color 0.2s ease, color 0.2s ease;
+	transition: background-color var(--transition), color var(--transition);
 }
 
 .nav-cta-btn:hover .phone-icon {
 	color: var(--background);
-	transition: color 0.2s ease;
+	transition: color var(--transition);
 }

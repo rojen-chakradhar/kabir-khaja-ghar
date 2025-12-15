@@ -23,12 +23,13 @@ body {
 	--background: #fafafa;
 	--p-ud: 4vw;
 	--p-side: 10vw;
-  --heading: 6rem;
-  --sub-heading: 3rem;
-  --title: 1.2rem;
-  --para: 1rem;
+  --heading-size: 6rem;
+  --sub-heading-size: 3rem;
+  --headline: 1.2rem;
+  --normal-txt-size: 1rem;
 	--half: 0.5rem;
   --icon: 1.2rem;
+	--transition: 0.3s ease;
 }
 
 @font-face {
@@ -65,11 +66,11 @@ body {
 }
 
 html::-webkit-scrollbar {
-	width: var(--half);
+	width: 0.5rem;
 	background-color: var(--border);
 }
 
 html::-webkit-scrollbar-thumb {
-	background-color: var(--cta);
-	border-radius: var(--half);
+	background-color: var(--secondary);
+	border-radius: 0.5rem;
 }
