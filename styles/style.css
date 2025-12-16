@@ -1,5 +1,5 @@
 .sec {
-	padding: 5vw 10vw;
+	padding: 5vw 10vw 0;
 }
 
 .hero-sec {
@@ -115,6 +115,13 @@
 	overflow: hidden;
 }
 
+.card img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
 .txts {
 	margin-top: 1rem;
 	display: flex;
@@ -128,10 +135,6 @@
 	line-height: 1;
 	text-transform: capitalize;
 	color: var(--text);
-}
-
-.about-sec {
-	height: 100vh;
 }
 
 .sub-heading {
@@ -173,32 +176,30 @@
 }
 
 .must-try {
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-.must-try h1 {
-	font-size: 3vw;
-	text-align: center;
-	color: var(--text);
+	.view-btn {
+		margin-top: 3rem;
+	}
 }
 
 .item {
-	position: relative;
-	height: 30vw;
-	width: 20vw;
+	height: 20rem;
+	width: 25%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	row-gap: 1vw;
+	row-gap: 0.5rem;
 	flex-shrink: 0;
-	padding: 1vw;
+	padding: 1rem;
 	text-align: center;
-	border: 1px solid var(--cta);
-	border-radius: 2vw;
+	border: 1px solid var(--secondary);
+	border-radius: 1rem;
 	box-shadow: 0 0 10px var(--border), 0 0 10px var(--border);
+	.para {
+		margin: 0;
+	}
 }
 
 .item picture {
@@ -207,14 +208,18 @@
 	overflow: hidden;
 }
 
-.item h3 {
-	font-size: 1.5vw;
-	text-transform: capitalize;
-	color: var(--text);
+.item img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 0.5rem;
 }
 
-.item p {
-	font-size: 1.2vw;
+.name {
+	font-size: 1.2rem;
+	line-height: 1;
+	text-transform: capitalize;
 	color: var(--text);
 }
 
@@ -223,38 +228,43 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1vw 0 0;
+	padding: 0.5rem 0 0;
 	border-top: 1px solid var(--text);
 }
 
-.info p {
-	font-size: 1.3vw;
+.price {
+	font-size: 1.2rem;
 	color: var(--text);
 }
 
 .info i {
-	padding: .5vw .7vw;
-	font-size: 1.3vw;
-	border: 1px solid var(--cta);
-	border-radius: 50%;
-	color: var(--text);
-	transition: background-color .5s linear, color .5s ease;
-	cursor: pointer;
-}
-
-.info i:hover {
-	color: var(--background);
-	background-color: var(--cta);
-	transition: background-color .5s linear, color .5s ease;
-}
-
-.smth {
-	height: 100vh;
-	width: 100%;
-	padding: 0;
+	height: 30px;
+	aspect-ratio: 1 / 1;
 	display: flex;
 	align-items: center;
-	background: url('') no-repeat center cover;
+	justify-content: center;
+	font-size: 1.2rem;
+	border: 1px solid var(--secondary);
+	border-radius: 50%;
+	color: var(--text);
+	transition: background-color var(--transition), color var(--transition);
+	cursor: pointer;
+	&:hover {
+	color: var(--background);
+	background-color: var(--secondary);
+	}
+}
+
+.memo {
+	height: 100dvh;
+	width: 100%;
+	margin-top: 5vw;
+	display: flex;
+	align-items: center;
+	background-image: url("https://images.unsplash.com/photo-1535850452425-140ee4a8dbae?q=80&w=812&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .txt {
@@ -263,25 +273,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #2e2e2e50;
+	background-color: #00000099;
+	.para {
+		width: 50%;
+		text-align: center;
+		color: var(--background);
+	}
 }
 
-.txt p {
-	width: 50%;
-	font-size: 2vw;
-	text-align: center;
-	color: var(--background);
-}
-
-.reviews {
+.review-sec {
 	height: 100vh;
-}
-
-.reviews h1 {
-	font-size: 3vw;
-	text-align: center;
-	text-transform: capitalize;
-	color: var(--text);
 }
 
 .slider {

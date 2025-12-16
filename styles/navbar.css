@@ -24,20 +24,18 @@
 	line-height: 1;
 	text-transform: capitalize;
 	color: var(--text);
-}
-
-.nav-link::before {
+	&::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
 	width: 0;
 	border-bottom: 2px solid var(--secondary);
 	transition: width var(--transition);
-}
-
-.nav-link:hover::before {
-	width: 100%;
-	transition: width var(--transition);
+	}
+	&:hover::before {
+		width: 100%;
+		transition: width var(--transition);
+	}
 }
 
 .nav-cta-btn {
@@ -50,15 +48,13 @@
 	background-color: var(--background);
 	cursor: pointer;
 	transition: background-color var(--transition), color var(--transition);
-}
-
-.nav-cta-btn:hover {
-	color: var(--background);
-	background-color: var(--secondary);
-	transition: background-color var(--transition), color var(--transition);
-}
-
-.nav-cta-btn:hover .phone-icon {
-	color: var(--background);
-	transition: color var(--transition);
+ 	&:hover {
+		color: var(--background);
+		background-color: var(--secondary);
+		transition: background-color var(--transition), color var(--transition);
+	}
+  &:hover .phone-icon {
+		color: var(--background);
+		transition: color var(--transition);
+	}
 }
