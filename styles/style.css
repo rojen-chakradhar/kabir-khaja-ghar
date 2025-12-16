@@ -37,7 +37,7 @@
 	color: var(--text);
 }
 
-.hero-ctas {
+.ctas {
 	margin-top: 3rem;
 	display: flex;
 	align-items: center;
@@ -282,96 +282,91 @@
 }
 
 .review-sec {
-	height: 100vh;
+	height: 80dvh;
 }
 
-.slider {
+.swiper {
+	height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
 	position: relative;
-}
-
-.arrows {
-	position: absolute;
-	top: 50%;
+	height: 100%;
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .slide {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50%;
 	width: 50%;
+	padding: 1rem;
+	border: 1px solid var(--secondary);
 }
 
 .persona {
 	display: flex;
 	align-items: center;
-	column-gap: 1vw;
+	column-gap: 0.5rem;
 }
 
-.persona picture {
-	height: 5vw;
-	width: 5vw;
-	border: 1px solid var(--border);
+.pfp {
+	height: 3rem;
+	aspect-ratio: 1 / 1;
+	border: 1px solid var(--secondary);
 	border-radius: 50%;
-	background-color: var(--cta);
+	object-position: center;
+	object-fit: cover;
+	background-color: var(--border);
 	overflow: hidden;
 }
 
-.name {
+.rating {
 	display: flex;
 	flex-direction: column;
 }
 
 .star-empty {
-	color: var(--cta);
+	color: var(--secondary);
 }
 
 .star-filled {
-	color: var(--cta);
+	color: var(--secondary);
 }
 
-.contact {
+/* .contact {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.contact h1 {
-	font-size: 3vw;
-	text-align: center;
-	text-transform: capitalize;
-	color: var(--text);
-}
-
 .schedule {
-	height: 75%;
-	width: 20vw;
-	padding: 1vw 2vw;
-	border: 1px solid var(--cta);
-	border-radius: 2vw;
+	width: 30%;
+	padding: 1rem;
+	border: 1px solid var(--secondary);
+	border-radius: 2rem;
 }
 
 .schedule h3 {
-	font-size: 1.5vw;
+	font-size: 1.2rem;
+	line-height: 1.2;
 	text-transform: capitalize;
 	text-decoration: underline;
 	color: var(--text);
-}
+} */
 
-.schedule p {
-	font-size: 1.2vw;
-	line-height: 1;
-	color: var(--text);
-}
-
-.address {
-	height: 60vh;
+.address-sec {
+	height: 100vh;
 	width: 100%;
-	margin-top: 5vw;
 	display: flex;
 	flex-direction: column;
-	padding: 0;
 }
 
 .google-map {
@@ -385,11 +380,12 @@ iframe {
 }
 
 address {
+	margin-top: 1rem;
 	display: flex;
 	align-items: center;
-	column-gap: .5vw;
-	padding: 0 5vw;
-	font-size: 1.5vw;
+	justify-content: center;
+	column-gap: 0.5rem;
+	font-size: 1.2rem;
 	text-transform: capitalize;
 	color: var(--text);
 }

@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	/* outline: 1px dotted red; */
 	list-style: none;
 	scroll-behavior: smooth;
 }
