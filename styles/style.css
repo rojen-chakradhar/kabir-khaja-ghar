@@ -23,20 +23,6 @@
 	color: var(--text);
 }
 
-.sub-heading {
-	font-size: var(--sub-heading);
-	line-height: 1;
-	text-transform: capitalize;
-	color: var(--text);
-}
-
-.para {
-	margin: 1.2rem 0;
-	font-size: var(--normal-txt-size);
-	line-height: 1.2;
-	color: var(--text);
-}
-
 .ctas {
 	margin-top: 3rem;
 	display: flex;
@@ -135,13 +121,6 @@
 	line-height: 1;
 	text-transform: capitalize;
 	color: var(--text);
-}
-
-.sub-heading {
-	margin-bottom: 4rem;
-	font-size: var(--sub-heading-size);
-	text-align: center;
-	line-height: 1.2;
 }
 
 .about-left-sec {
@@ -339,28 +318,6 @@
 .star-filled {
 	color: var(--secondary);
 }
-
-/* .contact {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.schedule {
-	width: 30%;
-	padding: 1rem;
-	border: 1px solid var(--secondary);
-	border-radius: 2rem;
-}
-
-.schedule h3 {
-	font-size: 1.2rem;
-	line-height: 1.2;
-	text-transform: capitalize;
-	text-decoration: underline;
-	color: var(--text);
-} */
 
 .address-sec {
 	height: 100vh;

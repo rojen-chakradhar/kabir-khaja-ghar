@@ -75,3 +75,19 @@ html::-webkit-scrollbar-thumb {
 	background-color: var(--secondary);
 	border-radius: 0.5rem;
 }
+
+.sub-heading {
+	margin-bottom: 4rem;
+	font-size: var(--sub-heading-size);
+	text-align: center;
+	line-height: 1.2;
+	text-transform: capitalize;
+	color: var(--text);
+}
+
+.para {
+	margin: 1.2rem 0;
+	font-size: var(--normal-txt-size);
+	line-height: 1.2;
+	color: var(--text);
+}
