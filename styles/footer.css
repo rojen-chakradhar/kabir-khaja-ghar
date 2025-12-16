@@ -26,11 +26,22 @@ footer {
 
 .links {
 	display: grid;
-	grid-template-columns: repeat(1fr, 3);
-	grid-template-row: repeat(1fr, 2);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 3rem;
 	row-gap: 1rem;
 }
 
 .link {
+	text-transform: capitalize;
 	color: var(--background);
+}
+
+footer .para {
+	color: var(--background);
+}
+
+.cc {
+	margin-top: 2rem;
+	text-align: center;
 }
