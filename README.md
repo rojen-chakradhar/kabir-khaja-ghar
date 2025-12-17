@@ -6,6 +6,12 @@ Hey there! This is a website of a restaurant. A site where people can see about 
 - **Frontend:** HTML, CSS, JavaScript
 - **Library:** Swiper.js
 
+
+## 🛠 Intructions
+- Open the github repo.
+- clone the repo.
+- run the index.html file
+
 ## 🎨 Features
 - Smooth and minimal scroll animations
 - Fully responsive layout for all devices
