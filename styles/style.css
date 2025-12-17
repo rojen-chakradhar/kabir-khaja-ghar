@@ -479,4 +479,8 @@ address {
 	.hero-sec {
 		height: auto;
 	}
+
+	.cards {
+		margin-top: 5vw;
+	}
 }
