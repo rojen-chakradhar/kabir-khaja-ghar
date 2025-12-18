@@ -8,9 +8,17 @@ Hey there! This is a website of a restaurant. A site where people can see about 
 
 
 ## 🛠 Intructions
-- Open the github repo.
-- clone the repo.
-- run the index.html file
+- Open any browser you like
+- Search kabirkhajaghgar.netlify.app
+- then wallah. The website is open
+### But if you want to get the code and see on your local device
+- Open github
+- Search rojen chakradhar
+- Go to repository
+- Find Kabir Khaja Ghar and click on it
+- Then clone the repository
+- Then run index.html file
+- And wallah. The website is open
 
 ## 🎨 Features
 - Smooth and minimal scroll animations
