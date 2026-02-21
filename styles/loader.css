@@ -1,0 +1,25 @@
+.loader {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100%;
+  margin-top: 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: margin-top 0.5s linear;
+  color: var(--background);
+  background-color: var(--secondary);
+}
+
+.loader-name {
+  line-height: 1;
+  font-size: var(--heading-size);
+}
+
+.est-date {
+  line-height: 1;
+  color: var(--sub-heading-size);
+}
