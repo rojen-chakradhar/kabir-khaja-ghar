@@ -1,22 +1,36 @@
 .loader {
-  position: sticky;
-  top: 0;
-  left: 0;
+  position: fixed;
+  inset: 0;
   height: 100dvh;
   width: 100%;
-  margin-top: 0 ;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: margin-top 0.5s linear;
   color: var(--background);
   background-color: var(--secondary);
+  z-index: 99;
+  overflow: hidden;
 }
 
 .loader-name {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  margin: 0;
+  text-transform: capitalize;
   line-height: 1;
   font-size: var(--heading-size);
+}
+
+.loader-name-word {
+  display: flex;
+  white-space: nowrap;
+}
+
+.loader-name-span {
+  text-transform: lowercase;
+  clip-path: inset(0 100% 0 0);
 }
 
 .est-date {
